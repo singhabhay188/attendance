@@ -1,9 +1,9 @@
 "use client"
 import React from 'react'
-import './page.css'
+import './footer.css'
 import { FaRegUserCircle } from "react-icons/fa";
 
-export default function page(){
+export default function Footer(){
   return (
     <div className='footer-bar'>
         <p>2024 &#169; ERP System. All rights reserved.</p>
