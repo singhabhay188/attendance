@@ -1,0 +1,123 @@
+.ManageStudent {
+    width: 50%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #15B392;
+  }
+  
+  .ManageStudent .tabContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .ManageStudent .tabContainer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #73EC8B;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+  }
+  
+  .ManageStudent .tabContainer button.activeTab {
+    background-color: #adf414;
+  }
+  
+  .ManageStudent .tabContainer button:hover {
+    background-color: #54C392;
+  }
+  
+  .ManageStudent .form {
+    display: flex; 
+    flex-direction: column; 
+  }
+  
+  .ManageStudent .formGroup {
+    margin-bottom: 15px; 
+  }
+  
+  .ManageStudent label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .ManageStudent input[type="text"],
+  .ManageStudent input[type="date"],
+  .ManageStudent input[type="email"],
+  .ManageStudent select {
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ManageStudent input[type="text"]:focus,
+  .ManageStudent input[type="date"]:focus,
+  .ManageStudent input[type="email"]:focus,
+  .ManageStudent select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .ManageStudent .submitButton,
+  .ManageStudent .removeButton {
+    background-color: #28a745;
+    color: white;
+    padding: 10px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+  }
+  
+  .ManageStudent .clearButton {
+    background-color: #dc3545; 
+    color: white; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    margin-top: 10px;
+  }
+  
+  .ManageStudent .submitButton:hover,
+  .ManageStudent .removeButton:hover,
+  .ManageStudent .clearButton:hover {
+    background-color: #218838; 
+  }
+  
+  .ManageStudent .clearButton:hover {
+    background-color: #c82333; 
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .ManageStudent {
+      width: 100%;
+      padding: 10px;
+      border-radius: 0;
+    }
+  
+    .ManageStudent .tabContainer button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  
+    .ManageStudentr .submitButton,
+    .ManageStudent .clearButton {
+      font-size: 14px;
+      padding: 8px 10px;
+    }
+  }

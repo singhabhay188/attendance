@@ -1,0 +1,124 @@
+.ManageTeacher {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #15B392;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ManageTeacher .tabContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .ManageTeacher .tabContainer button {
+    padding: 10px 20px;
+    background-color: #73EC8B;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ManageTeacher .tabContainer button:hover {
+    background-color: #54C392;
+  }
+  
+  .ManageTeacher .tabContainer button.activeTab {
+    background-color: #adf414;
+    color: #fff;
+  }
+  
+  .ManageTeacher .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .ManageTeacher .formGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ManageTeacher .formGroup label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .ManageTeacher .formGroup input,
+  .ManageTeacher .formGroup select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  .ManageTeacher .formGroup input:focus,
+  .ManageTeacher .formGroup select:focus {
+    outline: none;
+    border: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .ManageTeacher .submitButton,
+  .ManageTeacher .clearButton {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ManageTeacher .submitButton {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .ManageTeacher .submitButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .ManageTeacher .clearButton {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .ManageTeacher .submitButton:hover:not(:disabled),
+  .ManageTeacher .clearButton:hover {
+    background-color: #218838;
+  }
+  
+  .ManageTeacher .clearButton:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .ManageTeacher {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .ManageTeacher .tabContainer button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  
+    .ManageTeacher .submitButton,
+    .ManageTeacher .clearButton {
+      font-size: 14px;
+      padding: 8px 10px;
+    }
+  }
+  
