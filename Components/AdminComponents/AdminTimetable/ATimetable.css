@@ -1,0 +1,50 @@
+.timetable {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #B1D690;
+  }
+  .timetable h1{
+    text-align: center;
+    color: #C62E2E;
+    margin-bottom: 20px;
+  }
+  .timetable select {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    height: 50px;
+    border: 1px solid #ccc;
+  }
+  .timetable button {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #FF77B7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .timetable button:disabled {
+    background-color: #a79d98;
+  }
+  .timetable button:hover:not(:disabled) {
+    background-color: #fb0404;
+  }
+  
+  
+  /* Media Queries */
+  
+  @media (max-width: 500px){
+    .timetable{
+      width: 100%;
+      border-radius: 0;
+      height: 100vh;
+      padding-top: 80px;
+    }
+  }
