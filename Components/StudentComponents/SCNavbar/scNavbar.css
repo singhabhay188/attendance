@@ -15,69 +15,68 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
-.SCNavbar .SCNavbar-left{
+.SCNavbar .SCNavbar-left {
   gap: 10px;
   padding-left: 20px;
 }
-.SCNavbar-left .menu-icon .icon{
+.SCNavbar-left .menu-icon .icon {
   width: 30px;
   height: 30px;
   cursor: pointer;
 }
-.SCNavbar-left .div h1{
+.SCNavbar-left .div h1 {
   font-size: 30px;
   margin-left: 20px;
   color: #6e6e6e;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   /* background-color: aqua; */
 }
-.SCNavbar-left .div h2{
+.SCNavbar-left .div h2 {
   font-size: 30px;
   margin-left: 20px;
   color: #6e6e6e;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   display: none;
   /* background-color: aqua; */
 }
-.SCNavbar-left .div p{
+.SCNavbar-left .div p {
   padding-top: 5px;
   padding-left: 5px;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   /* background-color: aquamarine; */
 }
-.SCNavbar .SCNavbar-right{
+.SCNavbar .SCNavbar-right {
   gap: 10px;
   padding-right: 20px;
 }
-.SCNavbar-right .student-icon{
+.SCNavbar-right .student-icon {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
 }
-.SCNavbar .sem-detail p{
+.SCNavbar .sem-detail p {
   font-weight: 600;
 }
 
-
 /* MEDIA-QUERIES */
- @media (max-width: 525px){
-  .SCNavbar-left .div{
+@media (max-width: 525px) {
+  .SCNavbar-left .div {
     flex-direction: column;
   }
-  .SCNavbar-left .div h1{
+  .SCNavbar-left .div h1 {
     font-size: 30px;
     display: none;
   }
-  .SCNavbar-left .div h2{
+  .SCNavbar-left .div h2 {
     font-size: 20px;
     display: block;
   }
-  .SCNavbar-left .div p{
+  .SCNavbar-left .div p {
     font-size: 14px;
     margin-left: 20px;
   }
- }
+}
