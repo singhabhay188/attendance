@@ -1,0 +1,83 @@
+.flex-TCnav-div {
+    display: flex;
+    align-items: center;
+  }
+  .TCNavbar {
+    background-color: #f8f8f8;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    width: 100%;
+    color: #333333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+  .TCNavbar .TCNavbar-left {
+    gap: 10px;
+    padding-left: 20px;
+  }
+  .TCNavbar-left .menu-icon .icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .TCNavbar-left .div h1 {
+    font-size: 30px;
+    margin-left: 20px;
+    color: #6e6e6e;
+    font-family: "Times New Roman", Times, serif;
+    /* background-color: aqua; */
+  }
+  .TCNavbar-left .div h2 {
+    font-size: 30px;
+    margin-left: 20px;
+    color: #6e6e6e;
+    font-family: "Times New Roman", Times, serif;
+    display: none;
+    /* background-color: aqua; */
+  }
+  .TCNavbar-left .div p {
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    /* background-color: aquamarine; */
+  }
+  .TCNavbar .TCNavbar-right {
+    gap: 10px;
+    padding-right: 20px;
+  }
+  .TCNavbar-right .teacher-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .TCNavbar .tc-detail p {
+    font-weight: 600;
+  }
+  
+  /* MEDIA-QUERIES */
+  @media (max-width: 525px) {
+    .TCNavbar-left .div {
+      flex-direction: column;
+    }
+    .TCNavbar-left .div h1 {
+      font-size: 30px;
+      display: none;
+    }
+    .TCNavbar-left .div h2 {
+      font-size: 20px;
+      display: block;
+    }
+    .TCNavbar-left .div p {
+      font-size: 14px;
+      margin-left: 20px;
+    }
+  }
+  

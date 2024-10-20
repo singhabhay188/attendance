@@ -1,6 +1,4 @@
 import React from 'react'
-import navbar from '../../Components/TeacherComponents/navbar'
-
 const page = () => {
   return (
     <div>

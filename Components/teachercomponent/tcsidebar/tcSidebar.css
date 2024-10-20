@@ -1,0 +1,90 @@
+.sidebar-TC {
+  background-color: #eaeaea;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.sidebar-TC .shortcut-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.sidebar-TC .shortcut-links .side-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: #ffa500;
+    transition: all ease 0.2s;
+  }
+}
+.sidebar-TC .shortcut-links .side-link .icon {
+  width: 30px;
+  height: 30px;
+  color: #32cd32;
+}
+.sidebar-TC .shortcut-links .side-link p {
+  color: #444444;
+}
+.sidebar-TC button {
+  margin-top: 40px;
+  width: 100%;
+  height: 30px;
+  background-color: #007acc;
+  outline: none;
+  border: none;
+  color: #eaeaea;
+  font-weight: 600;
+  &:hover {
+    background-color: red;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1135px) {
+  .sidebar-SC .shortcut-links .side-link p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 970px) {
+  .sidebar-SC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sidebar-SC .shortcut-links {
+    gap: 0;
+    margin-top: 0;
+  }
+  .sidebar-SC .shortcut-links .side-link {
+    flex-direction: column;
+  }
+  .sidebar-SC .shortcut-links .side-link p {
+    font-size: 10px;
+  }
+  .sidebar-SC h1 {
+    font-size: 20px;
+    display: none;
+  }
+}
+@media (max-width: 781px) {
+  .sidebar-SC .shortcut-links .side-link p {
+    font-size: 8px;
+    text-align: center;
+  }
+  .sidebar-SC .shortcut-links .side-link {
+    justify-content: center;
+    align-items: center;
+  }
+}
