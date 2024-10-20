@@ -3,19 +3,20 @@
     position: fixed;
     top: 0;
     height: 100vh;
-    z-index: 11;
+    /* z-index: 11; */
     display: flex;
     flex-direction: column;
+    padding-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
     /* width: 20%; */
 }
-.sidebar-admin h1{
+/* .sidebar-admin h1{
     text-align: center;
     color: #444444;
     padding-top: 10px;
     padding-bottom: 10px;
-}
+} */
 .sidebar-admin .shortcut-links{
     display: flex;
     flex-direction: column;
@@ -26,7 +27,7 @@
 }
 .sidebar-admin .shortcut-links .side-link{
     display: flex;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     padding: 10px;
     cursor: pointer;
@@ -47,7 +48,7 @@
     color: #444444;
 }
 .sidebar-admin button{
-    margin-top: 40px;
+    margin-top: 10px;
     width: 100%;
     height: 30px;
     background-color: #007acc;
@@ -61,14 +62,18 @@
     }
 }
 
-
+@media (max-width: 1240px){
+    .sidebar-admin .shortcut-links .side-link{
+        padding: 5px;
+    }
+}
 @media (max-width: 1135px){
     .sidebar-admin .shortcut-links .side-link p{
         font-size: 12px;
     }
-    .sidebar-admin h1{
+    /* .sidebar-admin h1{
         font-size: 26px;
-    }
+    } */
 }
 @media (max-width: 970px){
     .sidebar-admin{
@@ -76,6 +81,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-top: 20px;
     }
     .sidebar-admin .shortcut-links{
         gap: 0;
@@ -87,10 +93,10 @@
     .sidebar-admin .shortcut-links .side-link p{
         font-size: 10px;
     }
-    .sidebar-admin h1{
+    /* .sidebar-admin h1{
         font-size: 20px;
         display: none;
-    }
+    } */
 }
 @media (max-width: 781px){
     .sidebar-admin .shortcut-links .side-link p{

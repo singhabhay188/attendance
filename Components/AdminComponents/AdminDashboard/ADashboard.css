@@ -1,5 +1,8 @@
 .admin-dashboard{
-    padding: 20px;
+    padding-top: 100px;
+    padding-left: 250px;
+    padding-right: 50px;
+    padding-bottom: 50px;
 }
 .admin-dashboard .admin-cards{
     display: grid;
@@ -49,18 +52,39 @@
 }
 
 /* Media-Queries */
-
+@media (max-width: 1240px){
+    .admin-dashboard{
+        padding-right: 50px;
+    }
+}
 @media (max-width: 1135px){
     .card1.user-inform {
         grid-column: span 3;
     }
 }
-@media (max-width: 970px){
+@media (max-width: 1015px){
     .card1.user-inform {
         grid-column: span 2;
     }
 }
+@media (max-width: 970px){
+    /* .card1.user-inform {
+        grid-column: span 2;
+    } */
+    .admin-dashboard{
+        padding-left: 200px;
+        /* padding-top: 100px;
+        padding-right: 20px;
+        padding-bottom: 50px; */
+    }
+}
 @media (max-width: 781px){
+    .admin-dashboard{
+        padding-left: 150px;
+        /* padding-top: 100px;
+        padding-right: 20px;
+        padding-bottom: 50px; */
+    }
     .card1.user-inform .user-info h1{
         font-size: 30px;
     }
@@ -71,9 +95,18 @@
         font-size: 12px;
     }
 }
-@media (max-width: 450px){
+@media (max-width: 580px){
+    .admin-dashboard{
+        padding-left: 150px;
+    }
     .card1.user-inform {
         grid-column: span 1;
+    }
+}
+@media (max-width: 450px){
+    .admin-dashboard{
+        padding-left: 150px;
+        padding-right: 30px;
     }
     .card1.user-inform .user-img-dash{
         width: 50px;

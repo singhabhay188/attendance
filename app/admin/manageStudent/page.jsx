@@ -1,4 +1,4 @@
-import ManageStudent from '@/Components/AdminComponents/ManageStudent/manageStudent'
+import ManageStudent from '../../../Components/AdminComponents/ManageStudent/manageStudent'
 
 const page = () => {
   return    <ManageStudent />

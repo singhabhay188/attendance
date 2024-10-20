@@ -1,9 +1,12 @@
-.calendar-container {
+/* .calendar-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
     font-family: Arial, sans-serif;
+    padding-top: 80px;
+    padding-left: 250px;
+    padding-right: 20px;
+    padding-bottom: 80px;
   }
   
   
@@ -13,10 +16,12 @@
     overflow: hidden;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    width: 1000px;
+    height: 500px;
   }
   
   .react-calendar__tile {
-    padding: 10px;
+    padding: 30px;
     text-align: center;
     text-decoration: none;
     outline: none;
@@ -76,4 +81,154 @@
   .tooltip small {
     color: #888;
   }
-  
+   */
+
+.Calendar {
+  /* width: 100%; */
+  /* max-width: 360px; */
+  /* margin: 20px auto; */
+  /* border: 1.5px solid #e0e0e0; */
+  border-radius: 12px;
+  overflow: hidden;
+  /* padding-bottom: 10px; */
+  /* box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); */
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  transition: box-shadow 0.3s ease;
+  padding-top: 80px;
+  padding-left: 250px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+/* .Calendar:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  } */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9a55de;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.header button:hover {
+  opacity: 1;
+}
+
+.header input {
+  width: 60px;
+  font-size: 1em;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.header input:hover,
+.header input:focus {
+  border-color: #ffd700;
+}
+
+.day-names,
+.days {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.day-name,
+.day,
+.empty-day {
+  width: 14.28%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.day-name {
+  background-color: #f3f3f3;
+  font-weight: bold;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.day {
+  cursor: pointer;
+  height: 100px;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  transition: background-color 0.3s, box-shadow 0.2s ease;
+}
+
+.day:hover {
+  background-color: #eaeaea;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.empty-day {
+  background-color: #f9f9f9;
+}
+
+.today {
+  background-color: #9a55de;
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+  box-shadow: 0 3px 6px rgba(154, 85, 222, 0.3);
+}
+
+.selected {
+  background-color: #ffd700;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(255, 215, 0, 0.3);
+}
+.holiday {
+  background: linear-gradient(#00ffff, rgb(224, 255, 255));
+  color: #000;
+  font-weight: bold;
+}
+
+.holiday:hover {
+  background: linear-gradient(rgb(224, 255, 255), #00ffff);
+}
+
+@media (max-width: 1136px) {
+  .Calendar{
+    padding-left: 200px;
+  }
+}
+@media (max-width: 970px) {
+  .Calendar{
+    padding-left: 150px;
+  }
+}
+@media (max-width: 600px){
+  .day{
+    height: 60px;
+  }
+}

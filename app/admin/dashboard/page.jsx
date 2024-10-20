@@ -1,7 +1,10 @@
-import AdminDashboard from '@/Components/AdminComponents/AdminDashboard/ADashboard'
-
+"use client"
+import React from "react"
+import ADashboard from "../../../Components/AdminComponents/AdminDashboard/ADashboard"
 const page = () => {
-  return    <AdminDashboard />
+  return  (
+    <ADashboard />
+  )  
 }
 
 export default page

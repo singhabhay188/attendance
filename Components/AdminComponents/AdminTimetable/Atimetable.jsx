@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import './ATimetable.css'
 
 
-const TimetableMaker = () => {
+export default function Atimetable(){
   const branches = ["BTECH", "BED", "BALLB", "BAJMC"];
   const semesters = {
     BTECH: [1, 2, 3, 4, 5, 6, 7, 8],
@@ -58,8 +58,7 @@ const TimetableMaker = () => {
   return (
     <div className="AdminTimetable">
       <div className="timetable">
-        <h1>Timetable</h1>
-
+        {/* <h1>Timetable</h1> */}
         <select value={branch} onChange={(e) => setBranch(e.target.value)}>
           <option value="">Select Branch</option>
           {branches.map((b) => (
@@ -148,4 +147,3 @@ const TimetableMaker = () => {
   );
 };
 
-export default TimetableMaker;

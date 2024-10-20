@@ -1,11 +1,12 @@
 .ManageStudent {
-    width: 50%; 
-    margin: 0 auto; 
-    padding: 20px; 
-    border: 1px solid #ddd;
+    padding-top: 80px;
+    padding-left: 250px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+    /* border: 1px solid #ddd; */
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: #15B392;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    /* background-color: #15B392; */
   }
   
   .ManageStudent .tabContainer {
@@ -103,15 +104,24 @@
   }
   
   /* Mobile responsiveness */
-  @media (max-width: 768px) {
+  @media (max-width: 1136px){
+    .ManageStudent{
+      padding-left: 200px;
+    }
+  }
+  @media (max-width: 970px){
+    .ManageStudent{
+      padding-left: 150px;
+    }
+  }
+  @media (max-width: 770px) {
     .ManageStudent {
-      width: 100%;
-      padding: 10px;
+      padding-left: 150px;
       border-radius: 0;
     }
   
     .ManageStudent .tabContainer button {
-      padding: 8px 15px;
+      padding: 8px 10px;
       font-size: 14px;
     }
   

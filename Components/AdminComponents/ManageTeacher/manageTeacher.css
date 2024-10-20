@@ -1,10 +1,11 @@
 .ManageTeacher {
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #15B392;
+    padding-top: 80px;
+    padding-left: 250px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+    /* background-color: #15B392; */
     border-radius: 8px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); */
   }
   
   .ManageTeacher .tabContainer {
@@ -104,14 +105,24 @@
   }
   
   /* Mobile responsiveness */
+  @media (max-width: 1136px){
+    .ManageTeacher {
+      padding-left: 200px;
+    }
+  }
+  @media (max-width: 968px){
+    .ManageTeacher {
+      padding-left: 150px;
+    }
+  }
   @media (max-width: 768px) {
     .ManageTeacher {
       width: 100%;
-      padding: 10px;
+      padding-left: 150px;
     }
   
     .ManageTeacher .tabContainer button {
-      padding: 8px 15px;
+      padding: 8px 10px;
       font-size: 14px;
     }
   

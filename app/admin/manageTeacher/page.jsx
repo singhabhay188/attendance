@@ -1,4 +1,4 @@
-import ManageTeacher from '@/Components/AdminComponents/ManageTeacher/manageTeacher'
+import ManageTeacher from '../../../Components/AdminComponents/ManageTeacher/manageTeacher'
 
 const page = () => {
   return    <ManageTeacher />
