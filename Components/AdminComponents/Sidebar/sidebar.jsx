@@ -10,24 +10,32 @@ import { FaPaperPlane } from "react-icons/fa";
 import { FaCalendarAlt } from "react-icons/fa";
 import { MdOutlineEmojiEvents } from "react-icons/md";
 import { FaWpforms } from "react-icons/fa";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const AdminSidebar = () => {
+  const pathname = usePathname();
+  let needed = pathname.split("/")[2];
+  console.log(needed);
+
+
+
   return (
     <div className="sidebar-admin">
       <h1>Admin Panel</h1>
       <div className="shortcut-links">
-        <div className="side-link">
+        <Link href="/admin/dashboard" className={`side-link ${needed === 'dashboard' ? 'active-link' : ''}`} >
           <MdDashboard className="icon" />
           <p>Dashboard</p>
-        </div>
-        <div className="side-link">
+        </Link>
+        <Link href="/admin/manageStudent" className={`side-link ${needed === 'manageStudent' ? 'active-link' : ''}`} >
           <PiStudent className="icon" />
           <p>Manage Student</p>
-        </div>
-        <div className="side-link">
+          </Link>
+        <Link href="/admin/manageTeacher" className={`side-link ${needed === 'manageTeacher' ? 'active-link' : ''}`} >
           <GiTeacher className="icon" />
           <p>Manage Teacher</p>
-        </div>
+          </Link>
         <div className="side-link">
           <FaPeopleGroup className="icon" />
           <p>Attendance</p>

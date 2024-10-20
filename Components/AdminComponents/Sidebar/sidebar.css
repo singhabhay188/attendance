@@ -35,6 +35,9 @@
         transition: all ease 0.2s;
     }
 }
+.active-link{
+    background-color: #ffa500;
+}
 .sidebar-admin .shortcut-links .side-link .icon{
     width: 30px;
     height: 30px;

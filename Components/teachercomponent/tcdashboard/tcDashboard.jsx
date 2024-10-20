@@ -98,4 +98,4 @@ const TCDashboard = () => {
   );
 };
 
-export default AdminSidebar;
+export default TCDashboard;
