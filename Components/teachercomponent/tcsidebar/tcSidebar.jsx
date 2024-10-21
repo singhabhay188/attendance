@@ -22,7 +22,7 @@ const TCSidebar = () => {
           <MdDashboard className="icon" />
           <p>Dashboard</p>
         </Link>
-        <Link href="/teacher/classTime" className={`side-link ${needed === "classTime" ? "active-link" : ""}`}>
+        <Link href="/teacher/schedule" className={`side-link ${needed === "schedule" ? "active-link" : ""}`}>
           <PiStudent className="icon" />
           <p>Class Schedules</p>
         </Link>

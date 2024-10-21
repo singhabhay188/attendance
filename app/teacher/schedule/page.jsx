@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import "./classtimetable.css";
+import classSchedule from "../../../Components/teachercomponent/classtimetable/classtimetable";
 
-const classSchedule = () => {
+const page = () => {
   return (
     <div className="TTSchedule">
       <table className="class-schedule-short">
@@ -50,4 +50,4 @@ const classSchedule = () => {
   );
 };
 
-export default classSchedule;
+export default page;
