@@ -3,9 +3,9 @@
   position: fixed;
   top: 0;
   height: 100vh;
-  z-index: 11;
   display: flex;
   flex-direction: column;
+  padding-top: 60px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -19,7 +19,7 @@
 }
 .sidebar-TC .shortcut-links .side-link {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
   padding: 10px;
   cursor: pointer;
@@ -37,7 +37,7 @@
   color: #444444;
 }
 .sidebar-TC button {
-  margin-top: 40px;
+  margin-top: 10px;
   width: 100%;
   height: 30px;
   background-color: #007acc;
@@ -51,9 +51,14 @@
   }
 }
 
+@media (max-width: 1240px){
+  .sidebar-SC .shortcut-links .side-link{
+      padding: 5px;
+  }
+}
 @media (max-width: 1135px) {
   .sidebar-SC .shortcut-links .side-link p {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 @media (max-width: 970px) {
@@ -72,10 +77,6 @@
   }
   .sidebar-SC .shortcut-links .side-link p {
     font-size: 10px;
-  }
-  .sidebar-SC h1 {
-    font-size: 20px;
-    display: none;
   }
 }
 @media (max-width: 781px) {

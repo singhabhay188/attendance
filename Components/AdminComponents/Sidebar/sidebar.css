@@ -3,20 +3,12 @@
     position: fixed;
     top: 0;
     height: 100vh;
-    /* z-index: 11; */
     display: flex;
     flex-direction: column;
     padding-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
-    /* width: 20%; */
 }
-/* .sidebar-admin h1{
-    text-align: center;
-    color: #444444;
-    padding-top: 10px;
-    padding-bottom: 10px;
-} */
 .sidebar-admin .shortcut-links{
     display: flex;
     flex-direction: column;
@@ -71,9 +63,6 @@
     .sidebar-admin .shortcut-links .side-link p{
         font-size: 12px;
     }
-    /* .sidebar-admin h1{
-        font-size: 26px;
-    } */
 }
 @media (max-width: 970px){
     .sidebar-admin{

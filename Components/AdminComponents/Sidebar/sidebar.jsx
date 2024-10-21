@@ -16,7 +16,6 @@ import { usePathname } from "next/navigation";
 const AdminSidebar = () => {
   const pathname = usePathname();
   let needed = pathname.split("/")[2];
-  console.log(needed);
 
   return (
     <div className="sidebar-admin">

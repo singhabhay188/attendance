@@ -1,0 +1,26 @@
+.classSchedule {
+    padding-top: 100px;
+    padding-left: 250px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    color: #000;
+  }
+  .classSchedule .class-schedule-short {
+    width: 100%;
+  }
+  .classSchedule .class-schedule-short th,
+  .classSchedule .class-schedule-short td {
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+    border-bottom: 1px solid #ddd;
+  }
+  .classSchedule .class-schedule-short th {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .classSchedule .class-schedule-short tr:hover {
+    background-color: #ff1515;
+  }
+  

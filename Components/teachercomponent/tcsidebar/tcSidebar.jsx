@@ -9,47 +9,51 @@ import { FaPaperPlane } from "react-icons/fa";
 import { FaCalendarAlt } from "react-icons/fa";
 import { MdOutlineEmojiEvents } from "react-icons/md";
 import { MdOutlineAssignment } from "react-icons/md";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
-const SCSidebar = () => {
+const TCSidebar = () => {
+  const pathname = usePathname();
+  let needed = pathname.split("/")[2];
   return (
     <div className="sidebar-TC">
       <div className="shortcut-links">
-        <div className="side-link">
+        <Link href="/teacher/dashboard" className={`side-link ${needed === "dashboard" ? "active-link" : ""}`}>
           <MdDashboard className="icon" />
           <p>Dashboard</p>
-        </div>
-        <div className="side-link">
+        </Link>
+        <Link href="/teacher/classTime" className={`side-link ${needed === "classTime" ? "active-link" : ""}`}>
           <PiStudent className="icon" />
           <p>Class Schedules</p>
-        </div>
-        <div className="side-link">
+        </Link>
+        <Link href="/teacher/enrolledStudents" className={`side-link ${needed === "enrolledStudents" ? "active-link" : ""}`}>
           <FaPeopleGroup className="icon" />
           <p>Enrolled Students</p>
-        </div>
-        <div className="side-link">
+        </Link>
+        <Link href="/teacher/markAttendance" className={`side-link ${needed === "markAttendance" ? "active-link" : ""}`}>
           <GiTeacher className="icon" />
           <p>Mark Attendance</p>
-        </div>
-        <div className="side-link">
+        </Link>
+        <Link href="/teacher/manageAssignment" className={`side-link ${needed === "manageAssignment" ? "active-link" : ""}`}>
           <MdOutlineAssignment className="icon" />
           <p>Manage Assignement</p>
-        </div>
-        <div className="side-link">
+        </Link>
+        <Link href="/teacher/notices" className={`side-link ${needed === "notices" ? "active-link" : ""}`}>
           <FaPaperPlane className="icon" />
           <p>Notices</p>
-        </div>
-        <div className="side-link">
+        </Link>
+        <Link href="/teacher/calendar" className={`side-link ${needed === "calendar" ? "active-link" : ""}`}>
           <FaCalendarAlt className="icon" />
           <p>Academic Calendar</p>
-        </div>
-        <div className="side-link">
+        </Link>
+        <Link href="/teacher/events" className={`side-link ${needed === "events" ? "active-link" : ""}`}>
           <MdOutlineEmojiEvents className="icon" />
           <p>Events</p>
-        </div>
+        </Link>
       </div>
       <button type="submit">Logout</button>
     </div>
   );
 };
 
-export default AdminSidebar;
+export default TCSidebar;

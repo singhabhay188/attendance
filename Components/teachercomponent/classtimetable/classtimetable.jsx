@@ -1,8 +1,8 @@
 "use client"
 import React from "react";
-import "./page.css"
+import "./classtimetable.css"
 
-const classSchedule = () => {
+const classschedule = () => {
   return (
     <div className="classSchedule">
       <table className="class-schedule-short">
@@ -45,4 +45,4 @@ const classSchedule = () => {
   )
 }
 
-export default classSchedule
+export default classschedule

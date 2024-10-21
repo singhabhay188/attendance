@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import user from '../../../assets/user.png'
+import user from '../../../Assets/user.png'
 import { IoMenu } from "react-icons/io5";
 import './tcNavbar.css';
 
